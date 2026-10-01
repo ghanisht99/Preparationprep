@@ -1,0 +1,26 @@
+/* remove spacing */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole page*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    background-color: #ffffff;
+
+}
+
+/*------ navbar -----*/
+
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1px 8%;
+    border-bottom:1px sloid #eeeeee;
+}
