@@ -123,6 +123,18 @@ body {
     border-bottom: 1px solid #eeeeee;
     
 }
+.tabs a{
+    text-decoration: none;
+    padding:20px;
+    color: black;
+    font-size:20px ;
+}
+
+.tabs .active{
+    border-bottom: 2px solid navy;
+
+}
+
 .form-group {
     margin:50px;
 
