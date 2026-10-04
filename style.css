@@ -116,7 +116,13 @@ body {
     text-align: center;
     margin:5px;
 }
-
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:20px;
+    border-bottom: 1px solid #eeeeee;
+    
+}
 .form-group {
     margin:50px;
 
