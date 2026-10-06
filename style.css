@@ -1,102 +1,219 @@
-/* remove spacing */
- *{
+/* Remove default spacing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Whole page*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+/* Whole page */
+body {
+    font-family: Arial, sans-serif;
     color: #172b4d;
     background-color: #ffffff;
-
 }
 
-/*------ navbar -----*/
+
+/* ---------------- NAVBAR ---------------- */
 
 .navbar {
-    height: 80px;
+    height: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 0 8%;
-    border-bottom:1px sloid #eeeeee;
+
+    border-bottom: 1px solid #eeeeee;
 }
+
+
 .logo {
     font-size: 22px;
 }
 
+
 .nav-links {
     display: flex;
-    gap:30px;
+    gap: 30px;
 }
 
+
 .nav-links a {
-    color:#172b4d;
     text-decoration: none;
+    color: #172b4d;
     font-size: 15px;
 }
 
-.nav-links a:hover{
-    color:#2563eb;
+
+.nav-links a:hover {
+    color: #2563eb;
 }
 
-/*---Hero---*/
 
-.hero-content{
+/* ---------------- HERO ---------------- */
+
+.hero {
     min-height: 420px;
-    color:#172b4d;
+
     display: flex;
-    background-color: #f4f8ff;
+    align-items: center;
+
     padding: 60px 8%;
-    text-align: center;
-    height: 180px;
+
+    background-color: #f4f8ff;
 }
 
-.hero-content{
+
+.hero-content {
     max-width: 550px;
 }
 
-.hero h1{
+
+.hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
     line-height: 1.2;
 
     margin-bottom: 20px;
 }
 
-.hero p{
+
+.hero p {
     font-size: 18px;
-    margin-bottom: 30px;
     line-height: 1.6;
 
     margin-bottom: 30px;
-}
-.hero button{
-    cursor: pointer;
-    color:whitesmoke;
-    border:none;
 
-    padding:13px 25;
+    color: #5f6b7a;
+}
+
+
+.hero button {
+    padding: 13px 25px;
+
+    border: none;
     border-radius: 6px;
+
     background-color: #2563eb;
+    color: white;
 
     font-size: 16px;
+
+    cursor: pointer;
 }
 
-/*--- footer---*/
 
-.info {
-    padding: 30px;
-    
+.hero button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ---------------- PRACTICE ---------------- */
+
+.practice {
+    padding: 70px 8%;
     text-align: center;
-    background-color: #172b4d;
-    color: white ;
-
-    border-bottom: 10px solid #ddd;
 }
+
+
+.practice h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 230px;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    text-align: left;
+
+    background-color: white;
+}
+
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+
+.card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------- WHY ---------------- */
+
+.why {
+    padding: 60px 8%;
+
+    background-color: #f4f8ff;
+
+    text-align: center;
+}
+
+
+.why h2 {
+    margin-bottom: 35px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.features div {
+    max-width: 220px;
+}
+
+
+.features h3 {
+    margin-bottom: 10px;
+}
+
+
+.features p {
+    color: #6b7280;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #172b4d;
+    color: white;
+}
+
+
+   /* ------------ LOGIN PAGE --------- */
+
 body {
     font-family: Arial,sans-serif;
     background-color: #f5f8fc;
@@ -108,14 +225,15 @@ body {
      padding: 35px 40px;
      background-color: white;
      border:1px solid #ddd;
-     border-radius:10px;
+     border-radius:5px;
      box-sizing: border-box;
 
 }
 .login-container h1 {
     text-align: center;
-    margin:5px;
+    margin-bottom:30px;
 }
+
 .tabs{
     display: flex;
     justify-content: space-around;
@@ -123,11 +241,13 @@ body {
     border-bottom: 1px solid #eeeeee;
     
 }
+
 .tabs a{
     text-decoration: none;
     padding:20px;
     color: black;
     font-size:20px ;
+
 }
 
 .tabs .active{
@@ -136,25 +256,25 @@ body {
 }
 
 .form-group {
-    margin:50px;
+    margin-bottom:30px;
 
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-size:16px;
-    color: black;
+    font-size:17px;
+    color: navy;
 }
 
 .form-group input {
-    width:400px;
+    width:100%;
     height: 45px;
     padding: 10px;
     box-sizing: border-box;
     border:1px solid #ddd;
     border-radius: 7px;
-    font-size: 16px;
+    font-size: 15px;
 
 }
 
@@ -167,23 +287,42 @@ body {
      cursor: pointer;
      border:#eeeeee;
      border-radius:7px;
-     font-size:medium;
+     font-size:15px;
      border:none;
 
 }
 
+
+
 .login-button:hover {
     background-color: #1765d1;
 }
-
-.login-container a{
+.forgot-password{
+    display: block;
     text-align: center;
-    margin:20px;
+    margin-top: 30px;
+}
+
+.or-divider{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    margin: 30px 0;
+    
+}
+.or-divider::before,
+.or-divider::after{
+    content: "";
+    height:1px;
+    background-color: grey;
+    flex:1
+    ;
+
 }
 
 .login-container p{
     text-align: center;
-    padding: 50px;
-    margin:30px;
+    
+    margin-top:25px;
     
 }
