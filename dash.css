@@ -1,0 +1,183 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #172b4d;
+    background-color: #ffffff;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    width: 100%;
+    align-items: center;
+    border-bottom:1px solid#ffffff ;
+    border-bottom: 1px solid #e2e8f0;
+}
+.logo {
+    font-size: 21px;
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #172b4d;
+    font-size: 17px;
+}
+.profile-icon {
+    color: #2563eb;
+}
+
+.nav-link a:hover{
+    color: blue;
+}
+
+/* --------- SIDEBAR -----*/
+
+.dashboard-layout {
+    display:flex;
+    align-items: flex-start;
+    gap:25px;
+    width:100%;
+}
+.dashboard-layout aside {
+    width:230px;
+    flex-shrink: 0;
+    background-color: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    
+}
+
+.sidebar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 18px;
+    background-color: transparent;
+}
+.main-content {
+    flex:1;
+    min-width: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.menu-list { 
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.menu-list a {
+
+    display: block;
+    text-decoration: none;
+    color:#334155;
+    padding:12px 14px;
+    border-radius: 8px;
+    font-size:15px;
+ }
+.menu-list a:hover {
+    background-color: #eaf1fb;
+}
+.menu-list a.active {
+    background-color: #e1edff;
+    color:#2563eb;
+    font-weight: 600;
+} 
+.menu-list li {
+    margin-bottom:8px;
+}
+.main-content h1 {
+      font-size: 30px;
+      color: black;
+
+}
+.main-content p {
+    color: #64748b;
+    margin: 0 0 30px;
+}
+.stats-section h2 {
+    margin: 0 0 16px;
+}
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:18px;
+}
+.stat-card {
+    background-color: white;
+    padding:20px;
+    width:100%;
+    min-height:170px;
+    
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid darkblue;
+}
+.stat-card h3 {
+    color:  #64748b;
+    font-size:16px;
+    font-weight:400;
+    margin: 0 0 12px;
+}
+.stat-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+.practice-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+.practice-section h2 {
+    margin: 0 0 16px;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:18px;
+}
+.pra-cards {
+    background-color: white;
+    padding:20px;
+    min-height: 170px;
+    width:100%;
+
+    box-sizing: border-box;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pra-cards h3 {
+    text-align: center;
+    margin: 0;
+}
+.pra-cards a {
+    text-decoration: none;
+    color:#1e293b;
+}
+.pra-cards img {
+    display: block;
+    margin: 0 auto;
+    width:55px;
+    height:55px;
+    object-fit: contain;
+
+}
